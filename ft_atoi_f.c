@@ -20,7 +20,7 @@ int ft_atoi_f(char **s)
 
 	result = 0;
 	count = 0;
-	charge = 1;
+	state = 1;
 	while ('0' <= (*s)[count] && (*s)[count] <= '9')
 	{
 		result = result * 10 + (*s)[count] - '0';
